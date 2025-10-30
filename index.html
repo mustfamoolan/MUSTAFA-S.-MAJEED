@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia</title>
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/swap.css">
+    <link rel="stylesheet" href="/assets/css/boostrap.min.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/media_query.css">
+    <style>body{font-family:'Tajawal',sans-serif}</style>
+</head>
+
+<body>
+    <!-- ====================================== Preloader ===================================== -->
+    <div class="wrapper">
+        <div id="loader-wrapper">
+            <div id="loader">
+                <svg viewBox="0 0 1320 300">
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">Olivia </text>
+                </svg>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+    <!-- ====================================== Preloader End ===================================== -->
+    <!-- ====================================== Background Animation ===================================== -->
+    <canvas id="background-canvas"></canvas>
+    <!-- ====================================== Background Animation End ===================================== -->
+    <!-- ====================================== Cursor ===================================== -->
+    <div class="cursor"></div>
+    <!-- ====================================== Cursor End ===================================== -->
+    <!-- ====================================== Dark Light Mode ===================================== -->
+    <div class="dark_toggle">
+        <div class="ul-header">
+            <a class="mode" onclick="myFunction()" title="Toggle Mode">
+                <div class="icon-container">
+                    <i id="sunIcon" class="fa-solid fa-sun fa-spin icon"></i>
+                    <i id="moonIcon" class="fa-solid fa-moon icon hidden"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- ====================================== Dark Light Mode End===================================== -->
+    <header>
+        <!-- ====================================== Fix Icon Menu ===================================== -->
+        <div class="sidebar close">
+            <ul class="nav-links icetab-container" id="icetab-container">
+                <li class="icetab current-tab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="/assets/images/home_icon.svg" alt="home_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class=""><a class="link_name" href="javascript:void(0)">Home</a></li>
+                    </ul>
+                </li>
+                <li class="icetab menu-btn">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="/assets/images/about_icon.svg" alt="about_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">About Me</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="/assets/images/resume_icon.svg" alt="resume_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Resume</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="/assets/images/services_icon.svg" alt="services_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Services</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="/assets/images/skills_icon.svg" alt="skills_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Skills</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="/assets/images/portfolio_icon.svg" alt="portfolio_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Portfolio</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="/assets/images/testimonial_icon.svg" alt="testimonial_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Testimonials</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="/assets/images/blog_icon.svg" alt="blog_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Blogs</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="/assets/images/contact_icon.svg" alt="contact_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- ====================================== Fix Icon Menu End ===================================== -->
+        <!-- ======================================= Side Menu ================================== -->
+        <div class="toggle" onclick="openNav()">
+            <img class="line-menu" src="/assets/images/line-menu.png" alt="line-menu">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="closebtn" onclick="closeNav()">&times;</div>
+            <img class="logo" src="/assets/images/logo.png" alt="logo">
+            <ul class="sidescreen_sub icetab-container" id="icetab-container2">
+                <li class="icetab current-tab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="/assets/images/home_icon.svg" alt="home_icon">Home
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="/assets/images/about_icon.svg"
+                            alt="about_icon">About Me
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="/assets/images/resume_icon.svg"
+                            alt="resume_icon">Resume
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="/assets/images/services_icon.svg"
+                            alt="services_icon.svg">Services
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="/assets/images/skills_icon.svg"
+                            alt="skills_icon">Skills
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="/assets/images/portfolio_icon.svg"
+                            alt="portfolio_icon">Portfolio
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="/assets/images/testimonial_icon.svg"
+                            alt="testimonial_icon">Testimonials
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="/assets/images/blog_icon.svg"
+                            alt="blog_icon">Blogs
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="/assets/images/contact_icon.svg"
+                            alt="contact_icon">Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- ======================================= Side Menu End ================================== -->
+    </header>
+    <div class="all_page" id="page">
+        <section class="card_section" id="card_main">
+            <div class="olivia_bio" id="oliva_details">
+                <div class="imgBox">
+                    <img class="olivia-img" src="/assets/images/photo_2025-10-25_20-48-48.jpg" alt="olivia-img">
+                </div>
+                <div class="bio_contain">
+                    <h1 class="olivia_moswa">مصطفى سعدي مجيد</h1>
+                    <h2 class="designer font_w_font_s1 overflow-hidden">مهندس برمجيات | مدير مشاريع معتمد PMP | مدير قسم البرمجة في شركة Homed</h2>
+                    <button class="download_cv hire_me font_w_font_s">
+                        <i class="ri-at-line"></i> Hire Me
+                    </button>
+                </div>
+            </div>
+            <div class="right_card_main icetab-content" id="icetab-content">
+                <!-- ======================================= Home Section ================================== -->
+                <section class="oliva-intro tabcontent tab-active" id="home">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">نبذة</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">مرحباً، أنا مصطفى سعدي مجيد</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">مهندس برمجيات ومدير مشاريع معتمد بخبرة واسعة في تطوير الأنظمة والتطبيقات عبر منصات متعددة، وقيادة فرق برمجية باستخدام منهجيات Agile وScrum. لدي سجل ناجح في تصميم المعمارية البرمجية، وتحسين جودة وأداء المشاريع، وتنفيذ حلول مبتكرة في قطاعات متنوعة مثل الصحة، المقاولات، التعليم، والتجارة الإلكترونية.</h3>
+                    <div class="button_circle_group">
+                        <div>
+                            <button class="download_cv font_w_font_s"
+                                onClick="window.open('/assets/pdf/olivia_resume.pdf');">
+                                <i class="ri-download-cloud-2-line"></i>Download CV
+                            </button>
+                        </div>
+                        <div class="circular_text_main ">
+                            <a href="javascript:void(0)" class="down_arrow_main position-relative">
+                                <img class="circular_text" src="/assets/images/circular_text.png" alt="circular_text">
+                                <img class="down_arrow" src="/assets/images/down_arrow.svg" alt="down_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= About Section ================================== -->
+                <section class="oliva-intro tabcontent" id="about">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">عنّي</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">الملخص المهني</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">مهندس برمجيات ومدير مشاريع معتمد بخبرة واسعة في تطوير الأنظمة والتطبيقات عبر منصات متعددة، وقيادة فرق برمجية باستخدام منهجيات Agile وScrum. لدي سجل ناجح في تصميم المعمارية البرمجية، وتحسين جودة وأداء المشاريع، وتنفيذ حلول مبتكرة في قطاعات متنوعة مثل الصحة، المقاولات، التعليم، والتجارة الإلكترونية.</h3>
+                    <div class="about_counter fade_up">
+                        <div class="counter">
+                            <h3 class="counter2 count font_w_font_s" data-count="5">5+</h3>
+                            <h3 class="experince font_w_font_s1 ">YEARS OF EXPERIENCE</h3>
+                        </div>
+                        <div class="counter">
+                            <h3 class="counter2 count font_w_font_s" data-count="160">160+</h3>
+                            <h3 class="experince">PROJECTS COMPLETED ON 15 COUNTRIES</h3>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Skills Section ================================== -->
+                <section class="oliva-intro tabcontent" id="skill">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">مهاراتي</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">المهارات التقنية</h2>
+                    <h3 class="passionate font_w_font_s1 ">لغات: Python، C#، .NET، JavaScript، PHP، Laravel، Go، Kotlin، Swift، C++، VB<br>
+                        الواجهات: Web، Desktop (Windows/macOS)، Mobile (Android/iOS)، ألعاب<br>
+                        قواعد البيانات: MySQL، SQLite، PostgreSQL، Firebase<br>
+                        DevOps وأدوات: Git، Docker، خدمات Google وAWS
+                    </h3>
+                    <h3 class="lan_skill font_w_font_s fade_up">اللغات</h3>
+                    <div class="skill_circle_main">
+                        <div>
+                            <div class="circlechart" data-percentage="100"></div>
+                            <h2 class="subject">العربية</h2>
+                        </div>
+                        <div>
+                            <div class="circlechart" data-percentage="90"></div>
+                            <h2 class="subject">الإنجليزية</h2>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Resume Section ================================== -->
+                <section class="oliva-intro tabcontent" id="resume">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">السيرة المهنية</h2>
+                    </div>
+                    <h2 class="moswa experience_main_text font_w_font_s fade_up">شركة Homed (2022 – الآن)</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">مدير قسم البرمجة والتطوير</h3>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h5 class="cursus font_w_font_s1">قيادة تنفيذ مشاريع:</h5>
+                            <ul class="blog-pop-up-list">
+                                <li>نظام إدارة شركات (مقاولات/إعمار)</li>
+                                <li>تطبيقات طبية، توصيل، صيانة، مندوب، حجز صالونات</li>
+                                <li>منصات تدريب وبيع كورسات</li>
+                                <li>أنظمة ذكاء صناعي، اختصار روابط، إدارة ديون</li>
+                                <li>أنظمة إدارة مخازن ومبيعات وعيادات</li>
+                                <li>تطوير ألعاب ألغاز وتعاونية</li>
+                                <li>تحويل مشاريع متعثرة إلى نجاحات بكفاءة في الوقت والتكلفة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- ======================================= Social Media Right Side  ================================== -->
+        <div class="social_media_main" id="social_media_main">
+            <ul class="social_media">
+                <li><a href="https://www.facebook.com" target="blank">FB</a></li>
+                <li><a href="https://twitter.com" target="blank">TW</a></li>
+                <li><a href="https://www.instagram.com" target="blank">IG</a></li>
+                <li><a href="https://www.behance.net" target="blank">BE</a></li>
+                <li><a href="https://dribbble.com" target="blank">DR</a></li>
+            </ul>
+        </div>
+        <!-- ======================================= Social Media Right Side End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window  ================================== -->
+        <div class="overlay">
+            <div class="content2">
+                <div id="close">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <img class="pop-up-video" src="/assets/images/portfolio_big_img.jpg" alt="portfolio_big_img">
+                <div class="corporate_main">
+                    <div class="corporate_sub">
+                        <h3 class="project_name corp font_w_font_s">Corporate Branding</h3>
+                        <p class="project_name_sub font_w_font_s1">CONTENT</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Created By:</p>
+                        <p class="cuberto">Cuberto</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Date:</p>
+                        <p class="cuberto">20/12/2024</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Client:</p>
+                        <p class="cuberto">Rayan Patrick</p>
+                    </div>
+                    <div class="cuberto_main">
+                        <p class="created_by">Categories:</p>
+                        <p class="cuberto">Content</p>
+                    </div>
+                </div>
+                <p class="blandit_text font_w_font_s1">
+                    Ornare sagittis blandit imperdiet cursus risus. Amet proin cras mattis arcu pellentesque lorem
+                    sagittis. Mauris facilisis id est duis eget sed cras curabitur faucibus. Lectus eu eu quis amet.
+                    Ultrices morbi bibendum risus nisi sapien id ut egestas. Et fermentum fermentum faucibus sed quis in
+                    eget. Quis cursus eu in sit cras sit elementum nibh sit.
+                </p>
+                <div class="project_second">
+                    <div>
+                        <img class="project_sub_images" src="/assets/images/project_sub_images1.jpg"
+                            alt="project_sub_images1">
+                    </div>
+                    <div>
+                        <img class="project_sub_images" src="/assets/images/project_sub_images2.jpg"
+                            alt="project_sub_images2">
+                    </div>
+                </div>
+                <p class="blandit_text">Non vel eget pharetra vestibulum orci amet feugiat mi cras. Neque ac duis sed
+                    viverra volutpat. Natoque habitasse sit in interdum ut in pharetra proin amet. Non id egestas tellus
+                    enim nisi proin. Vel neque gravida sed nunc. Scelerisque vulputate sit tellus dui. Sollicitudin id
+                    nec amet porttitor id. In condimentum id id phasellus eu lobortis quis porta nisi.
+                </p>
+                <div class="pop-up-footer">
+                    <button class="download_cv view_project font_w_font_s"
+                        onClick="window.open('https://themeforest.net/item/personal-portfolio-cv-html-template-nairobi/48662175');">
+                        <i class="ri-eye-line"></i> View Project
+                    </button>
+                    <div class="share-button share">
+                        <i class="ri-share-line share-btn"></i>
+                        <div class="social top center networks-5 ">
+                            <a class="fbtn facebook" href="https://www.facebook.com" target="_blank">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a class="fbtn instagram" href="https://www.instagram.com" target="_blank">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a class="fbtn whatsapp" href="https://wa.me/+12345678899" target="_blank">
+                                <i class="ri-whatsapp-line"></i>
+                            </a>
+                            <a class="fbtn linkedin" href="https://www.linkedin.com" target="_blank">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ======================================= Portfolio PopUp Window End ================================== -->
+        <!-- ======================================= Blog PopUp Window  ================================== -->
+        <div class="modal-wrapper">
+            <div class="modal">
+                <div class="content3">
+                    <h3 class="logo_design">11 Best Logo Design Online & Offline Courses</h3>
+                    <h4 class="graphic font_w_font_s1">graphic design | December 18, 2023</h4>
+                    <div class="blog_pop_up_main">
+                        <img class="blog_pop_up " src="/assets/images/blog_pop_up.png" alt="blog_pop_up">
+                    </div>
+                    <!-- ... content unchanged ... -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================================= Portfolio gallery ================================== -->
+    <div id="popup1" class="overlay_gallery">
+        <div class="popup_gallery">
+            <h2 class="city_gallery">City 3D View Gallery</h2>
+            <a class="close" href="#">&times;</a>
+            <div id="cbwrap">
+                <div class="gallery">
+                    <img src="/assets/images/gallery_img1.png" alt="gallery_img1">
+                    <img src="/assets/images/gallery_img2.png" alt="gallery_img2">
+                    <img src="/assets/images/gallery_img3.png" alt="gallery_img3">
+                    <img src="/assets/images/gallery_img4.png" alt="gallery_img4">
+                    <img src="/assets/images/gallery_img5.png" alt="gallery_img5">
+                    <img src="/assets/images/gallery_img1.png" alt="gallery_img1">
+                    <img src="/assets/images/gallery_img4.png" alt="gallery_img4">
+                    <img src="/assets/images/gallery_img2.png" alt="gallery_img2">
+                    <img src="/assets/images/gallery_img5.png" alt="gallery_img5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/javascript/jquery.min.js"></script>
+    <script src="/assets/javascript/magnific-popup.min.js"></script>
+    <script src="/assets/javascript/progresscircle.js"></script>
+    <script src="/assets/javascript/cursor.js"></script>
+    <script src="/assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="/assets/javascript/slick.min.js"></script>
+    <script src="/assets/javascript/net_animation/net_animation.js"></script>
+    <script src="/assets/javascript/script.js"></script>
+</body>
+
+</html>
+
+
