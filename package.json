@@ -1,0 +1,11 @@
+{
+  "name": "one_page_design",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:resume": "node scripts/build-resume.mjs"
+  },
+  "dependencies": {
+    "puppeteer": "^22.7.1"
+  }
+}
